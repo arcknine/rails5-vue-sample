@@ -1,6 +1,6 @@
 import Vue from 'vue/dist/vue.esm'
 import router from './router'
-import App from './components/App.vue'
+import App from './components/admin/App'
 import store from './store'
 
 Vue.config.productionTip = false

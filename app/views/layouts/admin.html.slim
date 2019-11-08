@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title RailsVyoo
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'admin', media: 'all'
+    = stylesheet_link_tag 'admin', media: 'all'
+    = javascript_include_tag 'application'
+    = javascript_pack_tag 'admin'
+  body
+    = yield
