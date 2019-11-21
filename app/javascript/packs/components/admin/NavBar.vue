@@ -2,13 +2,13 @@
   <aside class="sidenav-main nav-collapsible sidenav-dark" v-bind:class="collapseSideBar"  v-on:mouseover="showSideBar" v-on:mouseout="hideSideBar">
     <div class="brand-sidebar">
       <h1 class="logo-wrapper">
-        <a class="brand-logo darken-1" href="index.html">
+        <router-link class="brand-logo darken-1" to="/">
           <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/logo/materialize-logo.png" alt="materialize logo">
           <span class="logo-text hide-on-med-and-down">Materialize</span>
-        </a>
-        <a class="navbar-toggler" href="#">
+        </router-link>
+        <router-link class="navbar-toggler" to="/">
           <i class="material-icons">radio_button_checked</i>
-        </a>
+        </router-link>
       </h1>
     </div>
     <!-- non collapse nav -->
@@ -22,7 +22,11 @@
         <transition name="drop-down">
           <div class="collapsible-body" style="display: block" v-show="dropdown.dashboard">
             <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-              <li><a class="collapsible-body" href="dashboard-modern.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Modern</span></a>
+              <li>
+                <router-link class="collapsible-body" to="/users" data-i18n="">
+                  <i class="material-icons">radio_button_unchecked</i>
+                  <span>Users</span>
+                </router-link>
               </li>
               <li class="active"><a class="collapsible-body active" href="dashboard-ecommerce.html" data-i18n="" style="display: block;"><i class="material-icons">radio_button_unchecked</i><span>eCommerce</span></a>
               </li>

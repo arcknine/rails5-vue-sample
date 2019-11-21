@@ -11,3 +11,6 @@ html
     = javascript_pack_tag 'admin'
   body
     = yield
+    - if user_signed_in?
+      .container.text-center style="text-align: center"
+        = link_to "LOGOUT", destroy_user_session_path, method: :delete

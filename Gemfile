@@ -33,9 +33,11 @@ gem 'jbuilder', '~> 2.5'
 # Webpacker
 gem 'webpacker', '~> 4.x'
 
+# added gems
 gem 'slim-rails'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'jquery-rails'
+gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
