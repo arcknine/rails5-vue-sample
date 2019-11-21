@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title RailsVyoo
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'admin', media: 'all'
+    = javascript_include_tag 'application'
+  body.vertical-layout.page-header-light.vertical-menu-collapsible.vertical-dark-menu.1-column.login-bg.blank-page.blank-page data-col="1-column" data-menu="vertical-dark-menu" data-open="click" 
+    .row
+      .col.s12
+        .container
+          = yield
